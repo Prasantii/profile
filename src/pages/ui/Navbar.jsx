@@ -12,6 +12,10 @@ import { cn } from "../../../lib/utils";
 
 export const navbarMenu = [
   {
+    link: "#impact",
+    name: "Impact",
+  },
+  {
     link: "#about",
     name: "About",
   },
@@ -58,7 +62,7 @@ export const Navbar = ({ children, className }) => {
       {React.Children.map(children, (child) =>
         React.isValidElement(child)
           ? React.cloneElement(child, { visible })
-          : child
+          : child,
       )}
     </motion.div>
   );
@@ -86,7 +90,7 @@ export const NavBody = ({ children, className, visible }) => {
       className={cn(
         "relative py-7 z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-4  lg:flex dark:bg-transparent",
         visible && "bg-white/80 dark:bg-neutral-950/80",
-        className
+        className,
       )}
     >
       {children}
@@ -102,14 +106,14 @@ export const NavItems = ({ items, className, onItemClick }) => {
       onMouseLeave={() => setHovered(null)}
       className={cn(
         "absolute inset-0 hidden flex-1 flex-row items-center justify-center space-x-2 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex lg:space-x-2",
-        className
+        className,
       )}
     >
       {items.map((item, idx) => (
         <a
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-4 py-2 text-title-1 font-bold text-primary dark:text-neutral-300"
+          className="relative px-4 py-2 text-title-1 font-bold text-primary"
           key={`link-${idx}`}
           href={item.link}
         >
@@ -148,7 +152,7 @@ export const MobileNav = ({ children, className, visible }) => {
       className={cn(
         "relative z-50 mx-auto flex w-full max-w-[calc(100vw-2rem)] flex-col items-center justify-between bg-transparent px-0 py-2 lg:hidden",
         visible && "bg-white/80 dark:bg-neutral-950/80",
-        className
+        className,
       )}
     >
       {children}
@@ -161,7 +165,7 @@ export const MobileNavHeader = ({ children, className }) => {
     <div
       className={cn(
         "flex w-full flex-row items-center justify-between",
-        className
+        className,
       )}
     >
       {children}
@@ -179,7 +183,7 @@ export const MobileNavMenu = ({ children, className, isOpen, onClose }) => {
           exit={{ opacity: 0 }}
           className={cn(
             "absolute inset-x-0 top-16 z-50 flex w-full flex-col items-start justify-start gap-4 rounded-lg bg-white px-4 py-8 shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] dark:bg-neutral-950",
-            className
+            className,
           )}
         >
           {children}
@@ -200,13 +204,13 @@ export const MobileNavToggle = ({ isOpen, onClick }) => {
 export const NavbarLogo = () => {
   return (
     <a
-      href="#"
+      href="#top"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
-      <h1 className="text-h5">
+      <span className="text-h5 text-foreground">
         Pra
-        <span className="font-bold text-primary dark:text-white">santi</span>
-      </h1>
+        <span className="font-bold text-primary ">santi</span>
+      </span>
     </a>
   );
 };

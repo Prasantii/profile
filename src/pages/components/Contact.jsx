@@ -22,11 +22,16 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="p-8 flex flex-col items-center justify-center gap-8 min-h-screen bg-radial-[at_100%] from-white via-background/25  to-transparent to-100%"
+      className="p-8 flex flex-col items-center justify-center gap-8 min-h-screen bg-radial-[at_50%] from-center-radial via-background/25  to-transparent to-100%"
     >
-      <h1 className="text-h2 font-bold text-center  lg:max-w-[40vw]">
-        Want to be <span className="text-primary">connected</span> with me?
-      </h1>
+      <div className="flex flex-col gap-2 text-center">
+        <h2 className="text-h2 font-bold text-center  lg:max-w-[40vw]">
+          Interested in <span className="text-primary">working together?</span>
+        </h2>
+        <p className="text-title-2 md:text-title-1 font-semibold">
+          Let&apos;s turn ideas into experiences!
+        </p>
+      </div>
       <a href="mailto:prasantihikmatullisan@gmail.com">
         <MagicButton
           label="Get in touch"
@@ -46,7 +51,7 @@ const Contact = () => {
         ))}
       </div>
       <div className="bottom-0 absolute border  border-transparent border-t-primary bg-primary w-full py-2 px-2">
-        <p className="text-center text-background">
+        <p className="text-center text-background text-caption">
           Copyright &copy; 2025 Prasanti <br className="md:hidden" />| Created
           using Vite.js & Tailwind 4
         </p>

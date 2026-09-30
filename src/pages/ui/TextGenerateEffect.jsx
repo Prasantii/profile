@@ -34,7 +34,7 @@ const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className={`dark:text-white text-h4  lg:text-h1 font-bold ${
+              className={` text-h5 md:text-h4  lg:text-h1 font-bold ${
                 highlightWordIndex.includes(idx)
                   ? "text-primary"
                   : "text-foreground"

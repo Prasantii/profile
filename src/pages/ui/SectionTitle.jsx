@@ -2,9 +2,9 @@ import React from "react";
 
 const SectionTitle = ({ title, purpleTitle }) => {
   return (
-    <h1 className="heading">
+    <h2 className="heading">
       {title + " "} <span className="text-primary"> {purpleTitle}</span>
-    </h1>
+    </h2>
   );
 };
 

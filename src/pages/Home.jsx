@@ -19,6 +19,7 @@ import Experiences from "./components/Experiences";
 import Projects from "./components/Projects";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Impact from "./components/Impact";
 
 const Home = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -62,6 +63,7 @@ const Home = () => {
       <main className="relative">
         <Hero />
         <About />
+        <Impact />
         <Experiences />
         <Projects />
         <Services />

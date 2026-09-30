@@ -12,6 +12,7 @@
   --color-secondary: #B8B8FF;
   --color-cream: #FFD8BE;
   --color-cream-2: #FFEEDD;
+  --color-center-radial: var(--center-radial);
 
   --text-h1: 48px;
   --text-h2: 40px;
@@ -187,6 +188,7 @@
     --foreground: #52505C;
 
     --primary: #9381FF;
+    --center-radial: #FFFFFF;
   }
 
   .dark {
@@ -194,6 +196,7 @@
     --foreground: #F8F7FF;
 
     --primary: #9381FF;
+    --center-radial: #000000;
   }
 
   html {
@@ -203,6 +206,34 @@
 }
 
 @layer utilities {
+  .portrait-float {
+    animation: portrait-float 6s ease-in-out infinite;
+  }
+
+  @keyframes portrait-float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
   .container {
     @apply bg-background w-full;
     /* @apply py-8 bg-background items-center justify-center w-full flex flex-col; */
