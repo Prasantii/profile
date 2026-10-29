@@ -26,37 +26,38 @@ const Contact = () => {
       className="relative p-8 flex flex-col items-center justify-center gap-8 min-h-screen bg-radial-[at_50%] from-center-radial via-background/25  to-transparent to-100%"
     >
       <Reveal className="flex flex-col items-center gap-8">
-      <div className="flex flex-col gap-2 text-center">
-        <h2 className="text-h2 font-bold text-center  lg:max-w-[40vw]">
-          Interested in <span className="text-primary">working together?</span>
-        </h2>
-        <p className="text-title-2 md:text-title-1 font-semibold">
-          Let&apos;s turn ideas into experiences!
-        </p>
-      </div>
-      <a href="mailto:prasantihikmatullisan@gmail.com">
-        <MagicButton
-          label="Get in touch"
-          icon={<Navigation width={16} />}
-          iconPosition="right"
-        />
-      </a>
-      <div className="flex flex-row justify-between gap-4 text-primary">
-        {mediaSocials.map(({ link, icon }, i) => (
-          <a href={link} target="_blank" key={i}>
-            <IconButton
-              icon={icon}
-              className="bg-background"
-              // className="w-[48px] h-[48px]"
-            />
-          </a>
-        ))}
-      </div>
+        <div className="flex flex-col gap-2 text-center">
+          <h2 className="text-h2 font-bold text-center  lg:max-w-[40vw]">
+            Interested in{" "}
+            <span className="text-primary">working together?</span>
+          </h2>
+          <p className="text-title-2 md:text-title-1 font-semibold">
+            Let&apos;s turn ideas into experiences!
+          </p>
+        </div>
+        <a href="mailto:prasantihikmatullisan@gmail.com">
+          <MagicButton
+            label="Get in touch"
+            icon={<Navigation width={16} />}
+            iconPosition="right"
+          />
+        </a>
+        <div className="flex flex-row justify-between gap-4 text-primary">
+          {mediaSocials.map(({ link, icon }, i) => (
+            <a href={link} target="_blank" key={i}>
+              <IconButton
+                icon={icon}
+                className="bg-background"
+                // className="w-[48px] h-[48px]"
+              />
+            </a>
+          ))}
+        </div>
       </Reveal>
       <div className="bottom-0 absolute border  border-transparent border-t-primary bg-primary w-full py-2 px-2">
         <p className="text-center text-background text-caption">
           Copyright &copy; 2025 Prasanti <br className="md:hidden" />| Created
-          using Vite.js & Tailwind 4
+          using ReactJs, Vite.js & Tailwind 4
         </p>
       </div>
     </section>
