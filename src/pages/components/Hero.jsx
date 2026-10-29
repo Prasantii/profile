@@ -31,7 +31,7 @@ const Hero = () => {
           <div className="h-[32vw] w-[30vw] bg-cream rounded-t-[64px] " />
         </div>
         <img
-          src="/profile-pic.png"
+          src="/profile/profile-pic.png"
           alt="profile"
           className="absolute bottom-0 left-[40%] -translate-x-[40%] h-[95%] w-[40%] object-contain object-bottom"
         />
@@ -49,7 +49,7 @@ const Hero = () => {
       {/* Mobile */}
       <div className="md:hidden relative flex flex-col gap-6 items-center justify-center h-screen ">
         <div className="animate-fade-in-up rounded-full border border-cream bg-background/90 overflow-hidden w-32 h-32 object-cover">
-          <img src="/profile-pic.png" alt="profile" />
+          <img src="/profile/profile-pic.png" alt="profile" />
         </div>
         <div className="leading-5 text-center">
           <h1 className="text-title-1 font-bold">Prasanti Hikmatullisan</h1>
