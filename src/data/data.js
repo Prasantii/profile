@@ -55,14 +55,14 @@ export const experiences = [
     ],
   },
   {
-    id: 1, position: "Senior Frontend Developer", company: "PT. Bukuku Solusi Kreatif", location: "West Java, Indonesia", date: "2022 Dec - 2025 Apr", description: ["Reviewed and analyzed 20+ UI/UX design specifications to reduce 15% design-related implementation issues.",
+    id: 1, position: "Senior Frontend Developer", company: "PT. Bukuku Solusi Kreatif", location: "West Java, Indonesia", date: "2022 Dec - 2025 May", description: ["Reviewed and analyzed 20+ UI/UX design specifications to reduce 15% design-related implementation issues.",
       "Developed and implemented cross-platform applications (Android, iOS, and Web) using Flutter and GetX, reducing development time by 30% through code reusability.",
       "Actively collaborated with UI/UX designers and backend developers to deliver high-quality applications.",
       "Integrated RESTful APIs to improve data synchronization and reduce manual input by 40%.",
       "Implemented code with clean architecture to reduce duplicate code up to 50%."]
   },
   {
-    id: 2, position: "Freelancer", company: "RIMS | Software House", location: "Banda Aceh, Indonesia", date: "2020 Nov - 2022 Sep", description: [
+    id: 2, position: "Freelancer", company: "RIMS | Software House", location: "Banda Aceh, Indonesia", date: "2020 Nov - 2022 Nov", description: [
       "Developed application UI using Flutter and GetX that support the client’s needs",
       "Collaborated closely with other IT Teams (such as Backend developer and infrastructure team) to support the applications production."
     ]
