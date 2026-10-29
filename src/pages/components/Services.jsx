@@ -2,6 +2,7 @@ import React from "react";
 import SectionTitle from "../ui/SectionTitle";
 import { services } from "../../data/data";
 import { WobbleCard } from "../ui/WobbleCard";
+import Reveal from "../ui/Reveal";
 
 const Services = () => {
   return (
@@ -9,7 +10,8 @@ const Services = () => {
       <SectionTitle title="What can I" purpleTitle="offer to You" />
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:max-w-[80%] mx-auto">
         {services.map(({ id, title, description, img }, i) => (
-          <WobbleCard key={i}>
+          <Reveal key={id} delay={i * 100}>
+          <WobbleCard>
             <div className="flex flex-col gap-2 md:gap-4 items-center">
               <img src={img} alt={title} />
               <h3 className="text-title-1 md:text-h4 lg:text-h3 font-bold text-center">
@@ -20,6 +22,7 @@ const Services = () => {
               </p>
             </div>
           </WobbleCard>
+          </Reveal>
         ))}
       </div>
     </section>

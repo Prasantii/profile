@@ -9,21 +9,26 @@ export const skills = [
   { id: 6, img: "/profile/skills/tailwind.svg", name: "Tailwind" },
   { id: 7, img: "/profile/skills/firebase.svg", name: "Firebase" },
   { id: 8, img: "/profile/skills/git.svg", name: "Git" },
-  // { id: 6, img: "/skills/next-js.svg", name: "Next.Js" },
+  { id: 9, img: "/profile/skills/next-js.svg", name: "Next.Js" },
+  { id: 10, img: "/profile/skills/kotlin.svg", name: "Kotlin" },
 ];
 
 export const projects = [
-  { id: 1, title: "Bukuku Personal", description: "Meet your personal accountant. Cross-platform application that can be access in Android and IoS. User can download tax report with all incomes and outcomes calculation. Made using Flutter with API Rest Integration.", skills: [0, 1, 6, 7], img: "/profile/projects/projects-1.png" },
-  { id: 2, title: "Dynavolt", description: "Claim and Exchange your point to get amazing souvenirs. Made using Flutter with API Rest Integration.", skills: [0, 1, 6, 7], img: "/profile/projects/projects-2.png" },
-  { id: 3, title: "Chatdoc", description: "Converse with your favorite doctor. Made using Flutter with Firebase Realtime database supporting the chat feature.", skills: [0, 2, 6, 7], img: "/profile/projects/projects-3.png" },
-  { id: 4, title: "My Portfolio", description: "This Portfolio Page. Used Vite and Tailwind to support the responsive view.", skills: [3, 4, 5, 7], img: "/profile/projects/projects-4.png", liveUrl: "https://prasantii.github.io/profile" },
-  ...[5, 6, 7, 8].map((id) => ({
-    id,
-    title: `Sample Project ${String(id).padStart(2, "0")}`,
-    description: "Placeholder entry. Replace this with a short overview of the project, your role, and its impact.",
-    skills: [],
-    isPlaceholder: true,
-  })),
+  { id: 1, title: "Bukuku Personal", description: "Meet your personal accountant. Cross-platform application that can be access in Android and IoS. User can download tax report with all incomes and outcomes calculation. Made using Flutter with API Rest Integration.", skills: [0, 1, 6, 7], img: "/profile/projects/projects-1.png", liveUrl: "https://play.google.com/store/apps/details?id=personal.bukuku.io&hl=en" },
+  { id: 2, title: "Dynavolt", description: "Claim and Exchange your point to get amazing souvenirs. Made using Flutter with API Rest Integration.", skills: [0, 1, 6, 7], img: "/profile/projects/projects-2.png", liveUrl: "https://play.google.com/store/apps/details?id=dynavolt.co.id&hl=en" },
+  { id: 3, title: "Ecoskin", description: "Ecoskin Natural company profile.Built a streamlined brand web storefront featuring product catalog management, direct order showcase, and Next.js. Server-Side Rendering (SSR) for fast page loads and seamless digital product display", skills: [8, 5, 4, 7], img: "/profile/projects/projects-3.png", liveUrl: "https://ecoskinnatural.com/" },
+  { id: 4, title: "Vernam Chat App", description: "Production-ready messaging app with offline data persistence via SQLite and modular BLoC state management, ready for production.", skills: [0, 2, 6, 7] },
+  { id: 5, title: "EchoBoard", description: "AI Sentiment Analysis Platform (Personal Project). Built an AI-driven web platform to aggregate and analyze app user reviews from Google Play Store and Apple App Store, integrating OpenAI API for automated sentiment classification and user feedback analytics", skills: [8, 5, 4, 7], img: "/profile/projects/projects-5.png", liveUrl: "https://github.com/Prasantii/echoboard" },
+  { id: 6, title: "My Bookshelf", description: "Book Tracker (Personal Project). •	An Android book-tracking mobile application using Kotlin, featuring gamified XP progression, reading statistics, and a personal bookshelf management system. Implemented Clean Architecture principles and Room DB for efficient, offline-first local data persistence and scalable code maintainability", skills: [9, 7], img: "/profile/projects/projects-6.png", liveUrl: "https://github.com/Prasantii/my-bookshelf" },
+  // { id: 4, title: "Chatdoc", description: "Converse with your favorite doctor. Made using Flutter with Firebase Realtime database supporting the chat feature.", skills: [0, 2, 6, 7], img: "/profile/projects/projects-3.png" },
+  // { id: , title: "My Portfolio", description: "This Portfolio Page. Used Vite and Tailwind to support the responsive view.", skills: [3, 4, 5, 7], img: "/profile/projects/projects-4.png", liveUrl: "https://prasantii.github.io/profile" },
+  // ...[5, 6, 7, 8].map((id) => ({
+  //   id,
+  //   title: `Sample Project ${String(id).padStart(2, "0")}`,
+  //   description: "Placeholder entry. Replace this with a short overview of the project, your role, and its impact.",
+  //   skills: [],
+  //   isPlaceholder: true,
+  // })),
 ];
 
 export const experiences = [
@@ -31,7 +36,7 @@ export const experiences = [
     id: 4,
     position: "Software Engineer (Web)",
     company: "PT Rumah Pertanian",
-    date: "Jun 2026 - Aug 2026",
+    date: "Jun 2026 - Sep 2026",
     description: [
       "Developed responsive web applications using Next.js (React) with Prisma ORM for efficient relational database interactions.",
       "Converted Figma UI/UX designs into modular, reusable React frontend components.",

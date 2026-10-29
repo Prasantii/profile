@@ -1,3 +1,5 @@
+import Reveal from "../ui/Reveal";
+
 const outcomes = [
   {
     value: "20+",
@@ -22,10 +24,11 @@ const outcomes = [
 ];
 
 const Impact = () => (
-  <section
+  <Reveal
+    as="section"
     id="impact"
     aria-labelledby="impact-title"
-    className="animate-fade-in-up border-y border-primary/10 bg-secondary/15 px-6 py-16 md:px-10 md:py-20"
+    className="border-y border-primary/10 bg-secondary/15 px-6 py-16 md:px-10 md:py-20"
   >
     <div className="mx-auto max-w-7xl">
       <div>
@@ -41,10 +44,10 @@ const Impact = () => (
       </div>
       <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
         {outcomes.map((outcome, index) => (
-          <div
+          <Reveal
             key={outcome.value}
+            delay={index * 100}
             className="border-l-2 border-primary/40 pl-5"
-            style={{ animationDelay: `${index * 100}ms` }}
           >
             <p className="text-4xl font-bold text-primary md:text-5xl">
               {outcome.value}
@@ -53,11 +56,11 @@ const Impact = () => (
             <p className="mt-2 text-sm leading-relaxed text-foreground/70">
               {outcome.detail}
             </p>
-          </div>
+          </Reveal>
         ))}
       </div>
     </div>
-  </section>
+  </Reveal>
 );
 
 export default Impact;

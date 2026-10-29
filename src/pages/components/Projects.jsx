@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { ExternalLink, Github, X } from "lucide-react";
 import Card from "../ui/Card";
 import SectionTitle from "../ui/SectionTitle";
+import Reveal from "../ui/Reveal";
 import { projects, skills } from "../../data/data";
 
 const Projects = () => {
@@ -34,8 +35,10 @@ const Projects = () => {
           tools to customer-focused mobile experiences.
         </p>
         <div className="mt-10 grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 md:grid-cols-3">
-          {projects.map((p) => (
-            <Card key={p.id} data={p} onSelect={setSelectedProject} />
+          {projects.map((p, index) => (
+            <Reveal key={p.id} delay={Math.min(index * 65, 390)} className="h-full">
+              <Card data={p} onSelect={setSelectedProject} />
+            </Reveal>
           ))}
         </div>
       </div>

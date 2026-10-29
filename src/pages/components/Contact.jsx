@@ -2,6 +2,7 @@ import React from "react";
 import MagicButton from "../ui/MagicButton";
 import { Navigation } from "lucide-react";
 import IconButton from "../ui/IconButton";
+import Reveal from "../ui/Reveal";
 import {
   IconBrandGithub,
   IconBrandLinkedin,
@@ -22,8 +23,9 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="p-8 flex flex-col items-center justify-center gap-8 min-h-screen bg-radial-[at_50%] from-center-radial via-background/25  to-transparent to-100%"
+      className="relative p-8 flex flex-col items-center justify-center gap-8 min-h-screen bg-radial-[at_50%] from-center-radial via-background/25  to-transparent to-100%"
     >
+      <Reveal className="flex flex-col items-center gap-8">
       <div className="flex flex-col gap-2 text-center">
         <h2 className="text-h2 font-bold text-center  lg:max-w-[40vw]">
           Interested in <span className="text-primary">working together?</span>
@@ -50,6 +52,7 @@ const Contact = () => {
           </a>
         ))}
       </div>
+      </Reveal>
       <div className="bottom-0 absolute border  border-transparent border-t-primary bg-primary w-full py-2 px-2">
         <p className="text-center text-background text-caption">
           Copyright &copy; 2025 Prasanti <br className="md:hidden" />| Created

@@ -2,10 +2,10 @@ import SectionTitle from "../ui/SectionTitle";
 import { experiences } from "../../data/data";
 import Timeline from "../ui/Timeline";
 import TextGenerateEffect from "../ui/TextGenerateEffect";
+import Reveal from "../ui/Reveal";
 
 const Experiences = () => {
-  const tagLine =
-    "5 years in software engineering, specializing in mobile development";
+  const tagLine = "5 years Experience in Software Engineering";
   const techStack = [
     "Flutter",
     "GetX",
@@ -24,13 +24,13 @@ const Experiences = () => {
       <div className="mx-auto max-w-6xl">
         <SectionTitle title="Working" purpleTitle="Experiences" />
         <div className="mt-10 grid items-start gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-14">
-          <div className="flex flex-col gap-4 lg:sticky lg:top-28">
+          <Reveal className="flex flex-col gap-4 lg:sticky lg:top-28">
             <p className="text-sm font-semibold uppercase text-primary">
               Experience &amp; focus
             </p>
             <TextGenerateEffect
               words={tagLine}
-              highlightWordIndex={[0, 1, 8, 9]}
+              highlightWordIndex={[0, 4, 5]}
               className="text-2xl font-bold leading-snug text-foreground md:text-3xl"
             />
             <p className="max-w-md text-base leading-relaxed text-foreground/70">
@@ -56,7 +56,7 @@ const Experiences = () => {
                 ))}
               </ul>
             </div>
-          </div>
+          </Reveal>
           <Timeline experiences={experiences} />
         </div>
       </div>

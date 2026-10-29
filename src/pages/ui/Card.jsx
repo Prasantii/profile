@@ -25,7 +25,7 @@ const Card = ({ data, onSelect }) => {
               {String(data.id).padStart(2, "0")}
             </span>
             <span className="text-sm font-semibold text-foreground/50">
-              Sample project
+              No Preview Available
             </span>
           </div>
         )}

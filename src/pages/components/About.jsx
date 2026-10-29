@@ -1,6 +1,7 @@
 import React from "react";
 import SectionTitle from "../ui/SectionTitle";
 import IconButton from "../ui/IconButton";
+import Reveal from "../ui/Reveal";
 import { Twitter } from "lucide-react";
 import { skills } from "../../data/data";
 
@@ -11,12 +12,12 @@ const About = () => {
       className="pt-16 px-8 flex flex-col items-center justify-center min-h-screen bg-radial-[at_50%] from-center-radial via-background/25  to-transparent to-100%"
     >
       <div className="bg-primary rounded-2xl h-[4px] w-[60px] md:w-[128px]" />
-      <div className="py-16 flex flex-col items-center justify-center gap-2.5">
+      <Reveal className="py-16 flex flex-col items-center justify-center gap-2.5">
         <h2 className="text-h5 md:text-h2 font-bold text-foreground text-center p-0 m-0">
           Hello, I&apos;m Prasanti Hikmatullisan
         </h2>
-        <p className="text-title-1 md:text-h3 font-bold text-primary text-center p-0 m-0">
-          Mobile & Frontend Developer
+        <p className="text-title-1 md:text-h4 font-bold text-primary text-center p-0 m-0">
+          Mobile Developer | Software Engineer
         </p>
         <p className="lg:max-w-[60%] text-center  text-title-2 md:text-h5">
           I enjoy writing clean, testable code to ensure stability and
@@ -39,7 +40,7 @@ const About = () => {
             />
           ))}
         </div>
-      </div>
+      </Reveal>
       <div className="bg-primary rounded-2xl h-[4px] w-[60px] md:w-[128px]" />
       {/* <SectionTitle title="Prasanti" purpleTitle="Hikmatullisan" /> */}
     </section>
